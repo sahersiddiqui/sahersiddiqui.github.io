@@ -14,11 +14,12 @@ body {
 }
 
 a {
-  color: #d43076;
+  color: #409eff;
 }
 
 a:hover {
-  color: #dd5a92;
+  /* color: #409eff; */
+  color: #409eff;
   text-decoration: none;
 }
 
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #d43076;
+  background: #409eff;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -99,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
   float: left;
@@ -116,8 +117,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #d43076;
+.nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
+  color: #409eff;
   text-decoration: none;
 }
 
@@ -135,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease all 0.3s;
 }
 
-.nav-menu .drop-down:hover > ul {
+.nav-menu .drop-down:hover>ul {
   opacity: 1;
   visibility: visible;
 }
@@ -153,11 +154,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c4964;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #d43076;
+.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active>a, .nav-menu .drop-down ul li:hover>a {
+  color: #409eff;
 }
 
-.nav-menu .drop-down > a:after {
+.nav-menu .drop-down>a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
@@ -168,17 +169,17 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover > ul {
+.nav-menu .drop-down .drop-down:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
 
-.nav-menu .drop-down .drop-down > a {
+.nav-menu .drop-down .drop-down>a {
   padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
+.nav-menu .drop-down .drop-down>a:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
@@ -189,10 +190,12 @@ h1, h2, h3, h4, h5, h6 {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
   }
-  .nav-menu .drop-down .drop-down:hover > ul {
+
+  .nav-menu .drop-down .drop-down:hover>ul {
     left: -100%;
   }
-  .nav-menu .drop-down .drop-down > a:after {
+
+  .nav-menu .drop-down .drop-down>a:after {
     content: "\ea9d";
   }
 }
@@ -214,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #d43076;
+  color: #409eff;
 }
 
 .mobile-nav {
@@ -248,12 +251,12 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #d43076;
+.mobile-nav a:hover, .mobile-nav .active>a, .mobile-nav li:hover>a {
+  color: #409eff;
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .drop-down>a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 10px;
@@ -261,11 +264,11 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down>a:after {
   content: "\eaa1";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav .drop-down>a {
   padding-right: 35px;
 }
 
@@ -340,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #d43076;
+  color: #409eff;
 }
 
 @media (min-width: 1024px) {
@@ -354,6 +357,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -391,7 +395,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #d43076;
+  background: #409eff;
   bottom: 0;
   left: 0;
 }
@@ -423,11 +427,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -438,9 +442,11 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -471,7 +477,7 @@ section {
 .about .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #eeafca;
+  color: #cbe2ef;
   float: left;
 }
 
@@ -517,6 +523,7 @@ section {
   .about .image {
     text-align: center;
   }
+
   .about .image img {
     max-width: 80%;
   }
@@ -553,14 +560,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #fbeaf1;
+  background: #cbe2ef;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #dd5a92;
+  background-color: #409eff;
 }
 
 /*--------------------------------------------------------------
@@ -578,7 +585,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #d43076;
+  border-left: 2px solid #409eff;
   position: relative;
 }
 
@@ -621,7 +628,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #d43076;
+  border: 2px solid #409eff;
 }
 
 /*--------------------------------------------------------------
@@ -651,7 +658,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #d43076;
+  background: #409eff;
   height: 100%;
   border-radius: 0px;
 }
@@ -664,7 +671,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #d43076;
+  background: #409eff;
   transition: all 0.3s ease-in-out;
 }
 
@@ -699,7 +706,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #d43076;
+  color: #409eff;
 }
 
 @media (max-width: 768px) {
@@ -740,7 +747,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #d43076;
+  color: #409eff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -862,7 +869,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #d43076 !important;
+  background-color: #409eff !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -889,7 +896,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -912,6 +919,7 @@ section {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
+
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
@@ -994,7 +1002,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #d43076 !important;
+  background-color: #409eff !important;
 }
 
 @media (max-width: 767px) {
@@ -1014,7 +1022,7 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #d43076;
+  color: #409eff;
 }
 
 .contact .contact-about p {
@@ -1032,7 +1040,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #d43076;
+  color: #409eff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1041,11 +1049,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #d43076;
+  border: 1px solid #409eff;
 }
 
 .contact .social-links a:hover {
-  background: #d43076;
+  background: #409eff;
   color: #fff;
 }
 
@@ -1055,7 +1063,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #d43076;
+  color: #409eff;
   float: left;
   line-height: 1;
 }
@@ -1083,7 +1091,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1123,11 +1131,11 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #d43076;
+  border-color: #409eff;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #d43076;
+  background: #409eff;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1136,13 +1144,14 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #dd5a92;
+  background: #409eff;
 }
 
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1152,6 +1161,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
